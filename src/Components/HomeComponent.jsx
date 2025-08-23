@@ -5,11 +5,11 @@ import ig from '../images/farm2.jpg'
 const HomeComponent = () => {
   return (
     <div>
-      <h1 className="bg-success text-center text-light">
-        Welcome to AgriMarket Kenya
-      </h1>
+      <div className="container-fluid bg-success ">
+        <h1 className=" text-center text-light">Welcome to AgriMarket Kenya</h1>
+      </div>
       {/* hero section */}
-      <div className="container-fluid text-center p-3">
+      <div className="container-fluid text-center ">
         <section className="hero">
           <h1 className="text-center  p-3 fw-bolder">
             <b>
@@ -26,13 +26,14 @@ const HomeComponent = () => {
           <button className="btn btn-outline-success text-success">
             Sign Up Now
           </button>
+          <br />
         </section>
       </div>
       <div className="container text-center p-2">
         <h2 className="m-5 text-center ">How it works</h2>
         <div className="row">
           <div className="col-md-4">
-            <div className="card">
+            <div className="card" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>1. Discover & Connect</h4>
                 <p>
@@ -43,7 +44,7 @@ const HomeComponent = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>2. Agree on Terms</h4>
 
@@ -55,7 +56,7 @@ const HomeComponent = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>3. Transact Securely</h4>
                 <p>
@@ -71,9 +72,9 @@ const HomeComponent = () => {
       {/* about section */}
       <div className="container bg-light">
         <br />
-        <div className=" row mt-3 mb-3">
+        <div className=" row mt-3 mb-3 justify-content-center">
           <div className="col-md-10">
-            <div className="card">
+            <div className="card shadow">
               <div className="card-body">
                 <h3>For Farmers: More Profit, Less Hassle </h3>
                 <p>
@@ -85,9 +86,9 @@ const HomeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="row mb-3">
+        <div className="row mb-3 justify-content-center">
           <div className="col-md-10">
-            <div className="card">
+            <div className="card shadow">
               <div className="card-body">
                 <h1>ForBuyers: Quality & Freshness,Guaranteed </h1>
                 <p>✔ Get the freshest produce directly from the source.</p>
@@ -103,9 +104,9 @@ const HomeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="row mb-3">
+        <div className="row mb-3 justify-content-center">
           <div className="col-md-10">
-            <div className="card">
+            <div className="card shadow">
               <div className="card-body">
                 <h1>For Middlemen:New Opportunities, Efficient Trade</h1>
                 <p>
@@ -124,8 +125,8 @@ const HomeComponent = () => {
         </div>
         <br />
       </div>
-      <div className="container-">
-        <h1 className='text-center mt-3 mb-3'>Transparent Pricing</h1>
+      <div className="container bg-success p-5 text-white">
+        <h1 className="text-center mt-3 mb-3">Transparent Pricing</h1>
       </div>
       <div className="container">
         <h1>Our Commitment to Fair Pricing</h1>
@@ -138,7 +139,7 @@ const HomeComponent = () => {
 
         <p>
           This transparent model not only benefits individual users but also the
-          entire agricultural ecosystem.{" "}
+          entire agricultural ecosystem.
         </p>
       </div>
       <div className="container ready-join text-light text-center p-5 mt-3 fw-bold">
@@ -157,18 +158,18 @@ const HomeComponent = () => {
           Join us in building a more connected, efficient, and fair agricultural
           market.
         </p>
-        <button className='btn btn-success text-light m-3'>Explore Produce</button>
-        <button className='btn btn-outline-success '>Become Vendor</button>
+        <button className="btn btn-success text-light m-3">
+          Explore Produce
+        </button>
+        <button className="btn btn-outline-success ">Become Vendor</button>
       </div>
 
       {/* footer */}
-      <div className="container">
-        <footer className="text-center fw-bolder bg-dark text-light p-3">
-          <p>
-            &copy; {new Date().getFullYear()} AgriMarket Kenya. All rights
-            reserved.
-          </p>
-        </footer>
+      <div className="container text-center fw-bolder bg-dark text-light p-3">
+        <p>
+          &copy; {new Date().getFullYear()} AgriMarket Kenya. All rights
+          reserved.
+        </p>
       </div>
     </div>
   );
