@@ -33,7 +33,7 @@ const HomeComponent = () => {
         <h2 className="m-5 text-center ">How it works</h2>
         <div className="row">
           <div className="col-md-4">
-            <div className="card" style={{ height: 180 }}>
+            <div className="card shadow" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>1. Discover & Connect</h4>
                 <p>
@@ -44,7 +44,7 @@ const HomeComponent = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card" style={{ height: 180 }}>
+            <div className="card shadow" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>2. Agree on Terms</h4>
 
@@ -56,7 +56,7 @@ const HomeComponent = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card" style={{ height: 180 }}>
+            <div className="card shadow" style={{ height: 180 }}>
               <div className="card-body">
                 <h4>3. Transact Securely</h4>
                 <p>
@@ -125,7 +125,7 @@ const HomeComponent = () => {
         </div>
         <br />
       </div>
-      <div className="container bg-success p-5 text-white">
+      <div className="container transparent p-5 text-white">
         <h1 className="text-center mt-3 mb-3">Transparent Pricing</h1>
       </div>
       <div className="container">
@@ -142,26 +142,20 @@ const HomeComponent = () => {
           entire agricultural ecosystem.
         </p>
       </div>
-      <div className="container ready-join text-light text-center p-5 mt-3 fw-bold">
+      <div className="container bg-success text-light text-center p-5 mt-3 fw-bold">
         <h1>Ready to join the AgriMarket Community</h1>
         <p>
           Ready to transform the way you trade in agriculture? Sign up today and
           be part of a community that values transparency, quality, and fair
-          trade.
-        </p>
-        <p>
-          Whether you're a farmer looking to sell your harvest, a buyer seeking
+          trade.Whether you're a farmer looking to sell your harvest, a buyer seeking
           fresh produce, or a middleman wanting to expand your network,
-          AgriMarket is here to help you thrive.
-        </p>
-        <p>
-          Join us in building a more connected, efficient, and fair agricultural
+          AgriMarket is here to help you thrive.Join us in building a more connected, efficient, and fair agricultural
           market.
         </p>
-        <button className="btn btn-success text-light m-3">
+        <button className="btn btn-light text-success m-3">
           Explore Produce
         </button>
-        <button className="btn btn-outline-success ">Become Vendor</button>
+        <button className="btn btn-outline-light text-light ">Become Vendor</button>
       </div>
 
       {/* footer */}

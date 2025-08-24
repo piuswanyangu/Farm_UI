@@ -6,6 +6,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import {BrowserRouter as Router,Route,Link,Routes} from 'react-router-dom'
 import HomeComponent from './Components/HomeComponent';
 import RegisterComponent from './Components/RegisterComponent';
+import NotFound from './Components/NotFound';
+import LoginComponent from './Components/LoginComponent';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomeComponent/>}/>
       <Route path="/Register" element={<RegisterComponent/>}/>
+      <Route path='*' element={<NotFound/>}/>
+      <Route path='/login' element={<LoginComponent/>}/>
     </Routes>
    </Router>
   );

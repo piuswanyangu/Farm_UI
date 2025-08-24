@@ -9,9 +9,12 @@
   overflow: hidden;
 
 }
-.ready-join{
-  background-color: rgb(74, 204, 74);
+.transparent{
+  background-color: rgba(45, 156, 104, 0.863);
 
+}
+.mainreg{
+  background-color: #7683862c;
 }
 
 .App {
