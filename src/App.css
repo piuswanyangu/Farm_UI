@@ -15,6 +15,11 @@
 }
 .mainreg{
   background-color: #7683862c;
+
+}
+.not{
+  font-size: 10rem;
+  color: rgb(29, 197, 29);
 }
 
 .App {

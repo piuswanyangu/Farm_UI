@@ -2,12 +2,13 @@ import React from 'react'
 
 const RegisterComponent = () => {
   return (
-    <div className='mainreg'>
-      <div className="row ">
+    <div className="">
+      <div className="row  mainreg">
         <div className="col-md-6 align-items-center justify-content-center mx-auto">
-          <h1>Create An Account</h1>
-          <p>Join our community and connect directly with the harvest</p>
-          <form className="p-5 shadow rounded">
+          <form className="p-5 shadow bg-light rounded">
+            <h1>Create An Account</h1>
+            <p>Join our community and connect directly with the harvest</p>
+            <br />
             Fullnames <br />
             <input type="text" className="form-control" required />
             Email <br />
@@ -38,7 +39,9 @@ const RegisterComponent = () => {
             Village <br />
             <input type="text" className="form-control" />
             <br />
-            <p>Already have an Account <a href="">Login</a></p>
+            <p>
+              Already have an Account <a href="">Login</a>
+            </p>
             <button type="submit" className="form-control btn btn-success">
               Register
             </button>
