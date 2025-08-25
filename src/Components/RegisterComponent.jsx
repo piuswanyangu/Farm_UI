@@ -6,8 +6,8 @@ const RegisterComponent = () => {
       <div className="row  mainreg">
         <div className="col-md-6 align-items-center justify-content-center mx-auto">
           <form className="p-5 shadow bg-light rounded">
-            <h1>Create An Account</h1>
-            <p>Join our community and connect directly with the harvest</p>
+            <h1 className='text-center'>Create An Account</h1>
+            <p className='text-center text-secondary'>Join our community and connect directly with the harvest</p>
             <br />
             Fullnames <br />
             <input type="text" className="form-control" required />
