@@ -1,12 +1,53 @@
 import React from 'react'
 import pic from '../images/farm1.jpg'
 import ig from '../images/farm2.jpg'
+import { Link } from "react-router-dom";
 
 const HomeComponent = () => {
   return (
     <div>
       <div className="container-fluid bg-success ">
         <h1 className=" text-center text-light">Welcome to AgriMarket Kenya</h1>
+
+        <nav className="navbar navbar-expand-lg bg-success">
+          <div className="container">
+            <Link className="navbar-brand text-light" to="/">
+              AgriMarket
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="navbar-collapse" id="navbarNav">
+              <ul className="navbar nav ms-auto">
+                <li className="nav-item">
+                  <a href="#about" className="nav-link text-light">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="register" className="nav-link text-light">
+                    Register
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="login" className="nav-link text-light">
+                    Login
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="exploreproduces" className="nav-link text-light">
+                    Explore Produces
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       {/* hero section */}
       <div className="container-fluid text-center ">
@@ -21,10 +62,10 @@ const HomeComponent = () => {
             Your direct link to fresh produce, fair price and stronger community
           </p>
           <button className="btn btn-success text-light m-5">
-            Explore all Produce
+            <a href="exploreproduces">Explore all Produce</a>
           </button>
           <button className="btn btn-outline-success text-success">
-            Sign Up Now
+            <a href="register">Sign Up Now</a>
           </button>
           <br />
         </section>
@@ -147,15 +188,17 @@ const HomeComponent = () => {
         <p>
           Ready to transform the way you trade in agriculture? Sign up today and
           be part of a community that values transparency, quality, and fair
-          trade.Whether you're a farmer looking to sell your harvest, a buyer seeking
-          fresh produce, or a middleman wanting to expand your network,
-          AgriMarket is here to help you thrive.Join us in building a more connected, efficient, and fair agricultural
-          market.
+          trade.Whether you're a farmer looking to sell your harvest, a buyer
+          seeking fresh produce, or a middleman wanting to expand your network,
+          AgriMarket is here to help you thrive.Join us in building a more
+          connected, efficient, and fair agricultural market.
         </p>
         <button className="btn btn-light text-success m-3">
           Explore Produce
         </button>
-        <button className="btn btn-outline-light text-light ">Become Vendor</button>
+        <button className="btn btn-outline-light text-light ">
+          Become Vendor
+        </button>
       </div>
 
       {/* footer */}

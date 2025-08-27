@@ -8,6 +8,7 @@ import HomeComponent from './Components/HomeComponent';
 import RegisterComponent from './Components/RegisterComponent';
 import NotFound from './Components/NotFound';
 import LoginComponent from './Components/LoginComponent';
+import GetProductComponents from './Components/GetProductComponents';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/Register" element={<RegisterComponent/>}/>
       <Route path='*' element={<NotFound/>}/>
       <Route path='/login' element={<LoginComponent/>}/>
+      <Route  path='/exploreproduces' element={<GetProductComponents/>}/>
     </Routes>
    </Router>
   );
