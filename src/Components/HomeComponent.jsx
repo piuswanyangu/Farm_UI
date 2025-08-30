@@ -7,13 +7,14 @@ const HomeComponent = () => {
   return (
     <div>
       <div className="container-fluid bg-success ">
-        <h1 className=" text-center text-light">Welcome to AgriMarket Kenya</h1>
-
         <nav className="navbar navbar-expand-lg bg-success">
           <div className="container">
             <Link className="navbar-brand text-light" to="/">
               AgriMarket
             </Link>
+            <h1 className=" text-center text-light">
+              Welcome to AgriMarket Kenya
+            </h1>
             <button
               className="navbar-toggler"
               type="button"
@@ -22,7 +23,7 @@ const HomeComponent = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar nav ms-auto">
                 <li className="nav-item">
                   <a href="#about" className="nav-link text-light">
@@ -62,10 +63,20 @@ const HomeComponent = () => {
             Your direct link to fresh produce, fair price and stronger community
           </p>
           <button className="btn btn-success text-light m-5">
-            <a href="exploreproduces">Explore all Produce</a>
+            <a
+              href="exploreproduces"
+              className="text-decoration-none fw-bolder text-dark"
+            >
+              Explore all Produce
+            </a>
           </button>
           <button className="btn btn-outline-success text-success">
-            <a href="register">Sign Up Now</a>
+            <a
+              href="register"
+              className="text-decoration-none fw-bolder text-dark"
+            >
+              Sign Up Now
+            </a>
           </button>
           <br />
         </section>
